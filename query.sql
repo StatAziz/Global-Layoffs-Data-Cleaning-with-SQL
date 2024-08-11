@@ -57,12 +57,10 @@ FROM layoffs_staging
 WHERE company = 'Hibob';
 
 -- we cannot delete the duplicate using delete statement (like update) in mysql unlike sql server or postgres
-
 -- with cte as(
 -- select *, row_number() over ( partition by company, location, industry, total_laid_off, 
 -- percentage_laid_off, `date`, stage, country, funds_raised_millions) row_num
 -- from layoffs_staging)
-
 -- delete
 -- from cte 
 -- where row_num>1
@@ -177,7 +175,6 @@ ORDER BY 1;
 
 -- check the data type
 -- date datatype is text which needs to be changed to date
-
 -- check column date
 SELECT `date`
 FROM layoffs_staging_new;
@@ -196,7 +193,6 @@ MODIFY COLUMN `date` DATE;
 
 -- Now let's work with null and blank cells
 -- checking null in one column -- total_laid_off
-
 SELECT *
 FROM layoffs_staging_new
 WHERE total_laid_off IS NULL; 
@@ -240,7 +236,6 @@ WHERE (t1.industry IS NULL OR t1.industry ='') AND (t2.industry != '');
 -- update layoffs_staging2
 -- set industry = null
 -- where industry = '';
-
 -- check after updating table with populating industry
 SELECT *
 FROM layoffs_staging_new
@@ -253,7 +248,6 @@ WHERE company LIKE 'bally%';
 
 -- dropping column or row unnecessary
 -- deleting rows where both total_laid_off and percentage_laid_off null
-
 SELECT *
 FROM layoffs_staging_new
 WHERE total_laid_off IS NULL AND percentage_laid_off IS NULL;
