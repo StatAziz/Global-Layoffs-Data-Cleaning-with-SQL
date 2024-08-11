@@ -1,3 +1,4 @@
+![Layoffs Data Cleaning Project](image/Layoffs-data-cleaning-1.gif)
 
 # Worldwide Layoffs Data Cleaning Project
 
