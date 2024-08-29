@@ -1,6 +1,6 @@
-![Layoffs Data Cleaning Project](image/Layoffs-data-cleaning-1.gif)
+![Layoffs Data Cleaning Project](Image/Cleaning.gif)
 
-# Worldwide Layoffs Data Cleaning Project
+# Global Layoffs: Data Cleaning with SQL
 
 ## About the Project
 
