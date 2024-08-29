@@ -1,7 +1,23 @@
 ![Layoffs Data Cleaning Project](Image/Cleaning.gif)
 
 # Global Layoffs: Data Cleaning with SQL
-
+## Table of Contents
+- [About the Project](#about-the-project)
+- [About the Dataset](#about-the-dataset)
+- [Data Cleaning Process](#data-cleaning-process)
+  - [1. Create a Staging Table](#1-create-a-staging-table)
+  - [2. Find and Remove Duplicates](#2-find-and-remove-duplicates)
+  - [3. Standardize the Data](#3-standardize-the-data)
+  - [4. Handle Null and Blank Values](#4-handle-null-and-blank-values)
+    - [4.1 Identifying Null and Blank Values](#41-identifying-null-and-blank-values)
+    - [4.2 Populating Missing Values in the Industry Column](#42-populating-missing-values-in-the-industry-column)
+    - [4.3 Dealing with Missing Values in Numeric Columns](#43-dealing-with-missing-values-in-numeric-columns)
+    - [4.4 Addressing the Challenges in SQL](#44-addressing-the-challenges-in-sql)
+    - [4.5 Final Adjustments and Verification](#45-final-adjustments-and-verification)
+    - [4.6 Considerations for Future Analysis](#46-considerations-for-future-analysis)
+  - [5. Remove Unnecessary Columns and Rows](#5-remove-unnecessary-columns-and-rows)
+- [Final Table After Cleaning](#final-table-after-cleaning)
+- [Conclusion](#conclusion)
 ## About the Project
 
 In this project, I cleaned and prepared a dataset on worldwide layoffs for exploratory data analysis (EDA). The primary goal was to transform raw data into a clean, standardized format suitable for exploratory analysis. This process aimed to uncover useful insights and patterns from the layoffs data collected between 2020 and 2023.
