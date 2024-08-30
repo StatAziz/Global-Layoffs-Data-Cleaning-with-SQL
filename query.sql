@@ -1,4 +1,4 @@
--- SQL project:Worldwide-Layoffs Data cleaning
+-- project- Global Layoffs: Data cleaning with SQL
 
 -- take a look at the dataset
 SELECT *
